@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>借阅须知导览 - 图书管理系统</title>
+  <link rel="stylesheet" href="css/style.css?v=20260301">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="container">
+        <div class="site-logo">
+          <img src="images/logo.svg" alt="Logo">
+          <h1 class="site-title"><a href="index.html">图书管理系统</a></h1>
+        </div>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="about.html">关于</a></li>
+            <li>
+              <span class="nav-drop-trigger">服务</span>
+              <div class="nav-drop">
+                <a href="list.html">图书列表</a>
+                <a href="borrow.html">借阅说明</a>
+                <a href="borrow-guide.html" class="current">借阅须知导览</a>
+                <a href="contact.html">联系</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section>
+        <h2 class="section-title">借阅须知导览</h2>
+
+        <div class="guide-quick-nav card">
+          <h3 class="card-title">常用规则快速查找</h3>
+          <div class="quick-nav-grid">
+            <a href="#overdue" class="quick-nav-item">
+              <span class="quick-nav-icon">⏰</span>
+              <span class="quick-nav-label">逾期处理</span>
+            </a>
+            <a href="#renew" class="quick-nav-item">
+              <span class="quick-nav-icon">🔄</span>
+              <span class="quick-nav-label">续借说明</span>
+            </a>
+            <a href="#rare-books" class="quick-nav-item">
+              <span class="quick-nav-icon">📜</span>
+              <span class="quick-nav-label">珍本阅览</span>
+            </a>
+            <a href="#interlib" class="quick-nav-item">
+              <span class="quick-nav-icon">🤝</span>
+              <span class="quick-nav-label">馆际互借</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="guide-user-entry card">
+          <h3 class="card-title">请选择您的身份</h3>
+          <div class="user-entry-grid">
+            <a href="#new-reader" class="user-entry-card">
+              <div class="user-entry-icon">🆕</div>
+              <div class="user-entry-title">新读者</div>
+              <div class="user-entry-desc">首次来馆？了解办证、借阅基础规则</div>
+            </a>
+            <a href="#teacher" class="user-entry-card">
+              <div class="user-entry-icon">👨‍🏫</div>
+              <div class="user-entry-title">教师</div>
+              <div class="user-entry-desc">教职员工专属借阅权限与教学支持</div>
+            </a>
+            <a href="#visitor" class="user-entry-card">
+              <div class="user-entry-icon">🚶</div>
+              <div class="user-entry-title">校外访客</div>
+              <div class="user-entry-desc">校外人员入馆须知与临时借阅规则</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="guide-content">
+
+          <article id="new-reader" class="guide-section">
+            <div class="card guide-card">
+              <div class="guide-card-header">
+                <h3 class="card-title">🆕 新读者须知</h3>
+                <a href="#" class="guide-back">返回顶部 ↑</a>
+              </div>
+              <div class="guide-rule important">
+                <h4>一、办证须知（最重要）</h4>
+                <ol>
+                  <li>携带本人有效身份证件（身份证、学生证）到一楼服务台办理</li>
+                  <li>缴纳押金 100 元，退证时凭押金条全额退还</li>
+                  <li>借阅证仅限本人使用，转借他人造成损失由持证人承担</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>二、借阅权限</h4>
+                <ul>
+                  <li>最多同时借阅 <strong>5 册</strong>图书</li>
+                  <li>借期 <strong>30 天</strong>，到期前可续借 1 次，续借期 30 天</li>
+                  <li>新书、热门图书借期为 14 天，不可续借</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>三、借阅流程</h4>
+                <ol>
+                  <li>在书架选取图书后，到自助借还机或服务台办理</li>
+                  <li>核对借阅信息，确认借阅成功</li>
+                  <li>妥善保管图书，按时归还</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>四、开馆时间</h4>
+                <ul>
+                  <li>周一至周五：8:00 - 22:00</li>
+                  <li>周六、周日：9:00 - 21:00</li>
+                  <li>法定节假日：10:00 - 16:00</li>
+                </ul>
+              </div>
+              <div class="guide-shortcuts">
+                <span class="shortcut-label">相关规则：</span>
+                <a href="#overdue" class="shortcut-link">逾期处理</a>
+                <a href="#renew" class="shortcut-link">续借说明</a>
+              </div>
+            </div>
+          </article>
+
+          <article id="teacher" class="guide-section">
+            <div class="card guide-card">
+              <div class="guide-card-header">
+                <h3 class="card-title">👨‍🏫 教师须知</h3>
+                <a href="#" class="guide-back">返回顶部 ↑</a>
+              </div>
+              <div class="guide-rule important">
+                <h4>一、借阅权限（最重要）</h4>
+                <ol>
+                  <li>最多同时借阅 <strong>20 册</strong>图书</li>
+                  <li>借期 <strong>180 天</strong>，到期前可续借 2 次</li>
+                  <li>可预约新书和热门图书，优先借阅</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>二、教学支持服务</h4>
+                <ul>
+                  <li>可申请课程参考书专架，供学生课程使用</li>
+                  <li>支持批量借阅教学参考书，期限与课程同步</li>
+                  <li>可申请文献传递和代查代检服务</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>三、科研支持</h4>
+                <ul>
+                  <li>可免费使用馆内所有数据库资源</li>
+                  <li>校外访问需开通 VPN 权限</li>
+                  <li>可预约研究单间，用于学术研讨</li>
+                </ul>
+              </div>
+              <div class="guide-shortcuts">
+                <span class="shortcut-label">相关规则：</span>
+                <a href="#overdue" class="shortcut-link">逾期处理</a>
+                <a href="#renew" class="shortcut-link">续借说明</a>
+                <a href="#rare-books" class="shortcut-link">珍本阅览</a>
+                <a href="#interlib" class="shortcut-link">馆际互借</a>
+              </div>
+            </div>
+          </article>
+
+          <article id="visitor" class="guide-section">
+            <div class="card guide-card">
+              <div class="guide-card-header">
+                <h3 class="card-title">🚶 校外访客须知</h3>
+                <a href="#" class="guide-back">返回顶部 ↑</a>
+              </div>
+              <div class="guide-rule important">
+                <h4>一、入馆须知（最重要）</h4>
+                <ol>
+                  <li>携带本人有效身份证件，到门卫处登记后入馆</li>
+                  <li>阅览服务免费开放，外借需办理临时借阅证</li>
+                  <li>请遵守馆内规章制度，保持安静整洁</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>二、临时借阅证办理</h4>
+                <ul>
+                  <li>凭本人身份证及押金 200 元办理</li>
+                  <li>最多同时借阅 <strong>3 册</strong>，借期 <strong>30 天</strong></li>
+                  <li>退证时押金全额退还，工本费 10 元不予退还</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>三、访客限制</h4>
+                <ul>
+                  <li>珍本、特藏文献需提前预约，仅限馆内阅览</li>
+                  <li>部分电子资源仅限校内IP访问</li>
+                  <li>研究单间、研讨室不对校外访客开放</li>
+                </ul>
+              </div>
+              <div class="guide-shortcuts">
+                <span class="shortcut-label">相关规则：</span>
+                <a href="#overdue" class="shortcut-link">逾期处理</a>
+                <a href="#rare-books" class="shortcut-link">珍本阅览</a>
+                <a href="#interlib" class="shortcut-link">馆际互借</a>
+              </div>
+            </div>
+          </article>
+
+          <article id="overdue" class="guide-section">
+            <div class="card guide-card">
+              <div class="guide-card-header">
+                <h3 class="card-title">⏰ 逾期处理</h3>
+                <a href="#" class="guide-back">返回顶部 ↑</a>
+              </div>
+              <div class="guide-rule important">
+                <h4>一、逾期费用</h4>
+                <ol>
+                  <li>普通图书：每册每天 <strong>0.10 元</strong></li>
+                  <li>新书、热门图书：每册每天 <strong>0.20 元</strong></li>
+                  <li>逾期费用累计上限为图书定价的 2 倍</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>二、逾期停借</h4>
+                <ul>
+                  <li>逾期 15 天以上，暂停借阅权限</li>
+                  <li>还清图书并缴纳费用后，恢复借阅权限</li>
+                  <li>一年内累计逾期 3 次，借书册数减半</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>三、遗失赔偿</h4>
+                <ul>
+                  <li>可购买同版新书赔偿，另付加工费 10 元</li>
+                  <li>无法购回的，按图书定价 3-10 倍赔偿</li>
+                  <li>珍本、孤本按评估价值赔偿</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article id="renew" class="guide-section">
+            <div class="card guide-card">
+              <div class="guide-card-header">
+                <h3 class="card-title">🔄 续借说明</h3>
+                <a href="#" class="guide-back">返回顶部 ↑</a>
+              </div>
+              <div class="guide-rule important">
+                <h4>一、续借方式</h4>
+                <ol>
+                  <li><strong>在线续借</strong>：登录官网"我的借阅"自助办理</li>
+                  <li><strong>电话续借</strong>：拨打服务热线 010-XXXXXXX</li>
+                  <li><strong>到馆续借</strong>：到服务台或自助机办理</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>二、续借规则</h4>
+                <ul>
+                  <li>需在到期前 <strong>3 天内</strong>申请续借</li>
+                  <li>普通图书可续借 1 次，续借期 30 天</li>
+                  <li>教师可续借 2 次，每次续借期 180 天</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>三、不可续借情况</h4>
+                <ul>
+                  <li>图书已被其他读者预约</li>
+                  <li>存在逾期未还图书或欠费</li>
+                  <li>新书、热门图书、珍本图书</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article id="rare-books" class="guide-section">
+            <div class="card guide-card">
+              <div class="guide-card-header">
+                <h3 class="card-title">📜 珍本阅览</h3>
+                <a href="#" class="guide-back">返回顶部 ↑</a>
+              </div>
+              <div class="guide-rule important">
+                <h4>一、阅览须知（最重要）</h4>
+                <ol>
+                  <li>珍本图书<strong>仅限馆内阅览</strong>，概不外借</li>
+                  <li>需提前 1 天预约，凭有效身份证件登记</li>
+                  <li>阅览时需佩戴手套，使用铅笔摘录</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>二、预约方式</h4>
+                <ul>
+                  <li>线上预约：官网"珍本预约"栏目提交申请</li>
+                  <li>电话预约：拨打特藏部热线 010-XXXXXXX 转 801</li>
+                  <li>到馆预约：到四楼特藏服务台现场预约</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>三、使用规范</h4>
+                <ul>
+                  <li>每次限取 1 册，阅毕归还后方可调阅下一册</li>
+                  <li>严禁折叠、勾画、批注、拍照</li>
+                  <li>需复印的，由工作人员办理，收取扫描费</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article id="interlib" class="guide-section">
+            <div class="card guide-card">
+              <div class="guide-card-header">
+                <h3 class="card-title">🤝 馆际互借</h3>
+                <a href="#" class="guide-back">返回顶部 ↑</a>
+              </div>
+              <div class="guide-rule important">
+                <h4>一、服务范围（最重要）</h4>
+                <ol>
+                  <li>本馆未收藏的图书，可向合作馆申请借阅</li>
+                  <li>已加入 CALIS、CASHL 馆际互借系统</li>
+                  <li>覆盖全国 500+ 高校图书馆和公共图书馆</li>
+                </ol>
+              </div>
+              <div class="guide-rule">
+                <h4>二、申请方式</h4>
+                <ul>
+                  <li>登录馆际互借系统提交申请</li>
+                  <li>教师优先处理，一般 3-7 个工作日到馆</li>
+                  <li>到馆后通过短信或邮件通知取书</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>三、费用标准</h4>
+                <ul>
+                  <li>图书借阅：每册 10 元（教师免费）</li>
+                  <li>文献传递：每页 0.3 元（教师每月前 50 页免费）</li>
+                  <li>加急服务：额外收取加急费 20 元</li>
+                </ul>
+              </div>
+              <div class="guide-rule">
+                <h4>四、归还规则</h4>
+                <ul>
+                  <li>借期由借出馆决定，一般为 30 天</li>
+                  <li>逾期费用按借出馆标准执行</li>
+                  <li>遗失或损坏由申请人负责赔偿</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 图书管理系统。保留所有权利。</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
