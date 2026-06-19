@@ -1053,3 +1053,154 @@ p {
     font-size: 2rem;
   }
 }
+
+/* ---------- 14. Home Page Guide ---------- */
+.home-guide-section {
+  margin-bottom: var(--space-xl);
+}
+
+.home-guide-card {
+  background: linear-gradient(135deg, #fff 0%, #f5f0ff 100%);
+  border: 2px solid var(--color-accent);
+  border-left: 6px solid var(--color-accent);
+  box-shadow: 0 8px 28px rgba(138, 92, 246, 0.18);
+}
+
+.home-guide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.home-guide-header .section-title {
+  font-size: 1.375rem;
+}
+
+.home-guide-more {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.home-guide-more:hover {
+  color: var(--color-primary);
+}
+
+.home-guide-desc {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-lg);
+}
+
+.home-guide-user {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.home-guide-user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-lg) var(--space-md);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  color: var(--color-text);
+  transition: all 0.2s;
+}
+
+.home-guide-user-card:hover {
+  border-color: var(--color-primary);
+  background: linear-gradient(145deg, #f8faff, #f0f4ff);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(31, 111, 235, 0.15);
+  text-decoration: none;
+}
+
+.home-guide-user-icon {
+  font-size: 2rem;
+}
+
+.home-guide-user-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.home-guide-user-sub {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.home-guide-quick {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  padding-top: var(--space-md);
+  border-top: 1px dashed var(--color-border-strong);
+}
+
+.home-guide-quick-label {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.home-guide-quick-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(31, 111, 235, 0.2);
+}
+
+.home-guide-quick-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(31, 111, 235, 0.3);
+  text-decoration: none;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .home-guide-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-guide-user {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .home-guide-user {
+    grid-template-columns: 1fr;
+  }
+
+  .home-guide-quick-link {
+    flex: 1;
+    justify-content: center;
+    min-width: calc(50% - var(--space-sm));
+  }
+}
+
+@media (max-width: 480px) {
+  .home-guide-quick-link {
+    min-width: 100%;
+  }
+}
